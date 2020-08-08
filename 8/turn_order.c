@@ -51,11 +51,11 @@ int main(int argc, char *argv[])
 	showvalue(v16_turn2.byte, BITS16);
 
 	printf("32 host to network byte order change:\n");
-    printf("\torig:\t");
-    showvalue(v32_orig.byte, BITS32);
-    printf("\t1 times:");
-    showvalue(v32_turn1.byte, BITS32);
-    printf("\t2 times:");
+	printf("\torig:\t");
+	showvalue(v32_orig.byte, BITS32);
+	printf("\t1 times:");
+	showvalue(v32_turn1.byte, BITS32);
+	printf("\t2 times:");
 	showvalue(v32_turn2.byte, BITS32);
 
 	return 0;
