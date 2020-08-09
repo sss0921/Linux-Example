@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	while(1) {
 		memset(buff, 0, BUFFERLEN);
 		n = recvfrom(s, buff, BUFFERLEN, 0, (struct sockaddr*)&to, &len);
-		if(n > 0 && !strncpy(buff, "TIME", 4)) {
+		if(n > 0 && !strncmp(buff, "TIME", 4)) {
 			memset(buff, 0, BUFFERLEN);
 			now = time(NULL);
 			sprintf(buff, "%24s\r\n", ctime(&now));
